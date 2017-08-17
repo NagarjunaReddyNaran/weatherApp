@@ -1,0 +1,127 @@
+<div class="container-fluid mt50 ml10 mr10 hidden-sm hidden-xs">
+    <div class="row coverShot">
+        <div class="coverText s42 mt90 ml40 color-white">
+            <div>Merry Crate</div>
+        </div>
+        <div class="coverText s22  ml40 color-white" style="font-family:GothamBook;">
+            <div>The healthcare market place</div>
+        </div>
+        <div class="roleConsole mt20">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-bottom: 10px;">
+                    <div class="ml13 s14 color-white strong">I need help with:</div>
+
+                        <select class="form-control s16 mt8" ng-model="area" ng-change="areaChanged(city,area)" ng-options="area.value for area in lookups.areas"></select>
+                      <!--
+                    <md-select class="form-control s16 mb10"   ng-model="area">
+
+                        <md-option class="md-select1 md-default-theme1 md-select-label1" ng-value="area.value" data-ng-repeat="area in lookups.areas">{{ area.value }}</md-option>
+
+                    </md-select>
+
+                   <!-- <input type="text" ng-model="area"
+                           typeahead="area.name for area in areas | filter:$viewValue | limitTo:8"
+                           class="form-control">-->
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-bottom: 10px;">
+                    <div class="ml13 s14 color-white strong">I live near:</div>
+                    <select class="form-control s16 mt8" ng-init="city = city || lookups.cities[0].value" ng-model="city" ng-options="city.value for city in lookups.cities"></select>
+                    <!--
+                    <md-select class="form-control s16 mb10" ng-model="city">
+                        <md-option ng-value="city.value" data-ng-repeat="city in lookups.cities">{{ city.value }}</md-option>
+                    </md-select>
+                    !-->
+
+                </div>
+                <!--<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <div class="ml13 s12 color-white">My symptoms:</div>
+
+                    <input type="text" ng-model="selectedSymptom.name" typeahead="symptom for symptom in symptoms | filter:$viewValue | limitTo:8" class="form-control">
+                </div>-->
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="ml13 s14 color-white">&nbsp</div>
+                    <button type="submit" class="btn btn-success mt8 mr8 s18"
+                            ng-click="navigate('login','login',1)"  style="width: 100%; height: 50px;"><i class="fa fa-search"></i> Search
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p class="s32 mt37 color-gray centerIt" style="font-family:GothamBook;">What can <span
+                style="font-family:GothamMedium;"><span class="color4D4D4D">UberHeal</span><span
+                class="color22B473"></span><span style="font-family:GothamBook;"></span></span> do for me:</p>
+
+        <p class="s20 color-grey-light centerIt" style="font-family:GothamBook;">Getting expert opinion when you have been diagnosed or suspect a condition</p>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive centerPicture" src="img/uber-heal-01.png" />
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive centerPicture" src="img/uber-heal-02.png" />
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive centerPicture" src="img/uber-heal-03.png" />
+            </div>
+        </div>
+        <!--<carousel interval="slideInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+
+            </slide>
+        </carousel>
+        -->
+        <!--
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators dotstyle ml26-">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active mt14-"><a href="#carousel-example-generic">slide1</a>
+                </li>
+                <li data-target="#carousel-example-generic" data-slide-to="1" class="mt14-"><a href="#carousel-example-generic">slide2</a>
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="centerPicture pb10" src="img/slide1.png" alt="Image1">
+                </div>
+                <div class="item">
+                    <img class="centerPicture pb10" src="img/slide2.png" alt="Image2">
+                </div>
+            </div>                   
+        </div>
+        -->
+    </div>
+    <div class="row bt mt50">
+        <p class="s32 mt70 color-gray centerIt" style="font-family:GothamBook;">The Platform</p>
+
+        <p class="s20 color-grey-light centerIt" style="font-family:GothamBook;">UberHeal provides powerful tools to
+            connect you to our panel of specialists.</p>
+        <img src="img/collaborative-tools.png" alt="" height="" width="" class="centerPicture mt116- img-responsive">
+    </div>
+    <div class="row grey-bg-gradient pt40 ml25- mr25- pb20" style="font-family:HelveticaLight;">
+        <div class="col-lg-12 col-md-12">
+            <div class="col-lg-offset-2 col-md-offset-2 col-lg-2 col-md-2 mb20 bl">
+                <div class="color-white">COMPANY</div>
+                <div class="color-green">About Us</div>
+                <div class="color-green">Meet the Team</div>
+                <div class="color-green">Contact Us</div>
+            </div>
+            <div class="col-lg-2 col-md-2 bl">
+                <div class="color-white">SUPPORT</div>
+                <div class="color-green">Uber Heal</div>
+                <div class="color-green">Medical Software</div>
+            </div>
+            <div class="col-lg-2 col-md-2 bl">
+                <div class="color-white">TERMS OF USE</div>
+                <div class="color-green">Read Terms of Use</div>
+            </div>
+            <div class="col-lg-2 col-md-2 bl">
+                <div class="color-white">PRIVACY POLICY</div>
+                <div class="color-green">Read Privacy Policy</div>
+            </div>
+        </div>
+    </div>
+</div>

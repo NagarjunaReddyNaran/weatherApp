@@ -1,0 +1,94 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu>li {
+  display: inline;
+}
+
+.menu>li+li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 150, 136);
+  /*background-color: #333333;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(205, 220, 57);
+}
+
+table tr td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tbl-text {
+  text-align: center;
+  padding: 15px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.footer-fixed {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/************ Form ********************/
+
+.form-layout {
+    label {
+        font-size: 11px;
+    }
+}
+
+.vSpace {
+    padding: 0 10px;
+}

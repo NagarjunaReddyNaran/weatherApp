@@ -1,0 +1,33 @@
+<!--<div class="md-padding" ng-cloak layout="column">
+  <md-card>
+    <table>
+      <tr>
+        <td><b>Id</b></td>
+        <td><b>Name</b></td>
+      </tr>
+      <tr ng-repeat="item in items">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+      </tr>
+    </table>
+  </md-card>
+</div>-->
+
+<md-card>
+<div layout="row" layout-sm="column" class="tbl-text" style="background-color: rgb(255, 87, 34); color: #fff;">
+  <div flex>
+    ID
+  </div>
+  <div flex>
+    Name
+  </div>
+</div>
+<div layout="row" layout-sm="column" ng-repeat="item in items" class="tbl-text">
+  <div flex>
+    {{item.id}}
+  </div>
+  <div flex>
+    {{item.name}}
+  </div>
+</div>
+</md-card>

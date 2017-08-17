@@ -1,0 +1,69 @@
+<md-content class="form-layout" layout-padding style="max-height: 100%;">
+    <div>
+        <div class="text-center"><label> ADD NEW RECORD </label></div>
+        <hr>
+        <form name="myForm" class="container-fluid" ng-submit="myForm.$valid && submit()" novalidate>
+            <div layout="row">
+                <div flex>
+                    <md-input-container md-is-error="myForm.name.$invalid && (myForm.$submitted || myForm.name.$dirty)">
+                        <label>Name</label>
+                        <input name="name" id="name" ng-model="obj.name" ng-required="true">
+                        <div ng-messages="myForm.name.$error" ng-if="myForm.$submitted || myForm.name.$touched">
+                            <div ng-message="required">Campaign Name is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="vSpace"></div>
+                <div flex>
+                    <md-input-container md-is-error="myForm.name.$invalid && (myForm.$submitted || myForm.name.$dirty)">
+                        <label>Email</label>
+                        <input name="name" id="email" ng-model="obj.email" ng-required="true">
+                        <div ng-messages="myForm.name.$error" ng-if="myForm.$submitted || myForm.name.$touched">
+                            <div ng-message="required">Email is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+            <div layout="row">
+                <div flex>
+                    <md-input-container md-is-error="myForm.name.$invalid && (myForm.$submitted || myForm.name.$dirty)">
+                        <label>Phone</label>
+                        <input name="name" id="phone" ng-model="obj.phone" ng-required="true">
+                        <div ng-messages="myForm.name.$error" ng-if="myForm.$submitted || myForm.name.$touched">
+                            <div ng-message="required">Phone is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="vSpace"></div>
+                <div flex>
+                    <md-input-container md-is-error="myForm.myselect.$invalid && (myForm.$submitted || myForm.myselect.$dirty)">
+                        <md-select name="myselect" id="myselect" placeholder="select" ng-model="obj.myselect" ng-required="true">
+                            <md-option ng-repeat="o in options" ng-value="o">{{o}}</md-option>
+                        </md-select>
+                        <div ng-messages="myForm.myselect.$error" ng-if="myForm.$submitted || myForm.myselect.$touched">
+                            <div ng-message="required">myselect is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+            <div layout="row">
+                <div flex>
+                    <md-input-container md-is-error="myForm.status.$invalid && (myForm.$submitted || myForm.status.$dirty)">
+                        <md-radio-group layout="row" name="status" id="status" ng-model="obj.status" ng-required="true" class="">
+                            <md-radio-button ng-repeat="s in statuses" ng-value="s">{{s}}</md-radio-button>
+                        </md-radio-group>
+                        <div ng-messages="myForm.status.$error" ng-if="myForm.$submitted || myForm.status.$touched">
+                            <div ng-message="required">status is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+            <div class="text-center">
+                <md-button type="button" class="md-raised md-warn" ng-click="reset()">RESET</md-button>
+                <md-button type="button" class="md-raised md-primary" ng-click="submit()">SUBMIT</md-button>
+                <!--<md-button type="button" ng-click="reset()">RESET</md-button>
+                <md-button type="submit" class="md-primary">SUBMIT</md-button>-->
+            </div>
+        </form>
+    </div>
+</md-content>

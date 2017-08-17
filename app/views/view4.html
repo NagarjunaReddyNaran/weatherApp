@@ -1,0 +1,13 @@
+
+ <md-content class="page-container">
+    <md-card class="page p15 text-center">
+      <h1>{{items.name}}</h1>
+      <p>{{todayDate | date:'EEEE, dd MMM yyyy HH:mm a'}}</p>
+      <p>{{items.weather[0].main}}</p>
+      <div><strong>Humidity - </strong> {{items.main.humidity}}</div>
+      <div><strong>Pressure - </strong> {{items.main.pressure}}</div>
+      <div><strong>Temperature - </strong> {{items.main.temp}}</div>
+      <div><strong>Max Temperature - </strong> {{items.main.temp_max}}</div>
+      <div><strong>Min Temperature - </strong> {{items.main.temp_min}}</div>
+    </md-card>
+  </md-content>
